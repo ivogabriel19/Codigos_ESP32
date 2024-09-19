@@ -1,8 +1,8 @@
 #include <WiFi.h>
 #include <HTTPClient.h>
 
-const char* ssid = "BananaSplit";
-const char* password = "hola1234";
+const char* ssid = "IoTB";
+const char* password = "inventaronelVAR";
 
 void setup() {
   Serial.begin(115200);
@@ -19,7 +19,7 @@ void setup() {
     HTTPClient http; //comienza a crear una solicitud http
 
     // URL de la API de Randomuser.me
-    http.begin("https://randomuser.me/api/");
+    http.begin("https://192.168.1.116.me/api/esp/list");
     int httpResponseCode = http.GET();
 
     if (httpResponseCode > 0) {
