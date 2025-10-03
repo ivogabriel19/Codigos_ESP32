@@ -1,8 +1,8 @@
 #include <WiFi.h>
 #include <WebServer.h>
 
-const char* ssid = "BananaSplit";           // Nombre del SSID
-const char* password = "hola1234";            // Contraseña de la red
+const char* ssid = "IoTB";           // Nombre del SSID
+const char* password = "inventaronelVAR";            // Contraseña de la red
 
 // Pines de los relés
 #define RELAY1_PIN 32
